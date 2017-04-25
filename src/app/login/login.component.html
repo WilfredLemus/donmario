@@ -1,0 +1,53 @@
+<div class="content-login">
+  <div class="container-fluid">
+    <div *ngIf="error | async" class="row">
+      <div class="alert alert-danger">
+        <div class="container-fluid">
+            <div class="alert-icon">
+              <i class="material-icons">error_outline</i>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true"><i class="material-icons">clear</i></span>
+            </button>
+            <b>Error:</b> {{ error.message }}
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card card-profile">
+        <div class="card-avatar">
+          <img class="img" src="../assets/img/logo.png" />
+        </div>
+        <div class="content">
+          <h6 class="category text-gray">Pizzeria Don Mario</h6>
+          <h4 class="card-title">Bienvenido</h4>
+          <form #formData='ngForm' (ngSubmit)="onSubmit(formData)">
+            <div class="card-content-login">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group label-floating">
+                    <label class="control-label">Email</label>
+                    <input type="text" class="form-control" (ngModel)="email" name="email" required />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group label-floating">
+                    <label class="control-label">Contraseña</label>
+                    <input type="password" class="form-control" (ngModel)="password" name="password" required/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <!--<a class="btn btn-primary btn-round btn-block">Ingresar</a>-->
+              <button type="submit" [disabled]="!formData.valid" class="btn btn-primary btn-round btn-block">Ingresar</button>
+              <div class="text-left btn-link" style="display:block;">
+                <a href="#" >Recuperar Contraseña!</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

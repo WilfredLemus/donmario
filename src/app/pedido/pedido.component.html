@@ -1,0 +1,651 @@
+<div class="container-fluid">
+<div class="row">
+		<section>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="material-icons">restaurant</i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="material-icons">create</i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="material-icons">content_paste</i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="material-icons">check_circle</i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3>Step 1</h3>
+                        <p>This is step 1</p>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3>Step 2</h3>
+                        <p>This is step 2</p>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3>Step 3</h3>
+                        <p>This is step 3</p>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                            <li><button type="button" class="btn btn-default next-step">Skip</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <h3>Complete</h3>
+                        <p>You have successfully completed all steps.</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </section>
+   </div>
+
+
+
+  <div class="row">
+    <div class="col-md-7">
+      <ul class="nav nav-pills nav-pills-icons nav-pills-warning" role="tablist">
+        <li>
+          <a href="#dashboard" role="tab" data-toggle="tab">
+            <i class="material-icons">dashboard</i>
+            Restaurante
+          </a>
+        </li>
+        <li class="active">
+          <a href="#schedule" role="tab" data-toggle="tab">
+            <i class="material-icons">schedule</i>
+            Para llevar
+          </a>
+        </li>
+        <li>
+          <a href="#tasks" role="tab" data-toggle="tab">
+            <i class="material-icons">list</i>
+            A domicilio
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-5">
+        <div class="form-group label-floating is-empty">
+            <label class="control-label">Cliente</label>
+            <select name="country" class="form-control">
+                <option disabled="" selected=""></option>
+                <option value="Afghanistan"> Afghanistan </option>
+                <option value="Albania"> Albania </option>
+                <option value="Algeria"> Algeria </option>
+                <option value="American Samoa"> American Samoa </option>
+                <option value="Andorra"> Andorra </option>
+                <option value="Angola"> Angola </option>
+                <option value="Anguilla"> Anguilla </option>
+                <option value="Antarctica"> Antarctica </option>
+                <option value="...">...</option>
+            </select>
+        </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <div class="card card-nav-tabs">
+        <div class="card-header" data-background-color="green">
+          <div class="nav-tabs-navigation">
+            <div class="nav-tabs-wrapper">
+              <span class="nav-tabs-title" style="float:none;">Categoria:</span>
+              <ul class="nav nav-tabs" data-tabs="tabs">
+                <li class="active">
+                  <a href="#pizza" data-toggle="tab">
+                    Pizza
+                  <div class="ripple-container"></div></a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Empanada
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Desayunos
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Ensaladas
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Almuerzos
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Pollo
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Pastas
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Tortillas de Harina
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Hamburguesas
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#pizza" data-toggle="tab">
+                    Bebidas
+                    <div class="ripple-container"></div>
+                  </a>
+                </li>
+                <li class="">
+                  <a href="#messages" data-toggle="tab">
+                    Aguas
+                  <div class="ripple-container"></div></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-content">
+          <div class="tab-content">
+            <div class="tab-pane active" id="pizza">
+              <div class="row">
+                <a href="#" class="col-xs-12 col-sm-3 products">
+                  <div class="offer offer-success">
+                    <div class="offer-content">
+                      <h3 class="product-name">
+                        Pizza Personal Carne Asada
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="col-xs-12 col-sm-3 products">
+                  <div class="offer offer-success">
+                    <div class="offer-content">
+                      <h3 class="product-name">
+                        Pizza Personal Carne Asada
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="col-xs-12 col-sm-3 products">
+                  <div class="offer offer-success">
+                    <div class="offer-content">
+                      <h3 class="product-name">
+                        Pizza Personal Carne Asada
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="col-xs-12 col-sm-3 products">
+                  <div class="offer offer-success">
+                    <div class="offer-content">
+                      <h3 class="product-name">
+                        Pizza Personal Carne Asada
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="col-xs-12 col-sm-3 products">
+                  <div class="offer offer-success">
+                    <div class="offer-content">
+                      <h3 class="product-name">
+                        Pizza Personal Carne Asada
+                      </h3>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes" checked>
+                        </label>
+                      </div>
+                    </td>
+                    <td>Sign contract for "What are conference organizers afraid of?"</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                    </td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes" checked>
+                        </label>
+                      </div>
+                    </td>
+                    <td>Create 4 Invisible User Experiences you Never Knew About</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane" id="messages">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes" checked>
+                        </label>
+                      </div>
+                    </td>
+                    <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                    </td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>Sign contract for "What are conference organizers afraid of?"</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="tab-pane" id="settings">
+              <table class="table">
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>Lines From Great Russian Literature? Or E-mails From My Boss?</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes" checked>
+                        </label>
+                      </div>
+                    </td>
+                    <td>Flooded: One year later, assessing what was lost and what was found when a ravaging rain swept through metro Detroit
+                    </td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="optionsCheckboxes">
+                        </label>
+                      </div>
+                    </td>
+                    <td>Sign contract for "What are conference organizers afraid of?"</td>
+                    <td class="td-actions text-right">
+                      <button type="button" rel="tooltip" title="Edit Task" class="btn btn-primary btn-simple btn-xs">
+                        <i class="material-icons">edit</i>
+                      </button>
+                      <button type="button" rel="tooltip" title="Remove" class="btn btn-danger btn-simple btn-xs">
+                        <i class="material-icons">close</i>
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-5">
+      <div class="card">
+                      <div class="card-header" data-background-color="red">
+                          <h4 class="title">Employees Stats</h4>
+                          <p class="category">New employees on 15th September, 2016</p>
+                      </div>
+                      <div class="card-content table-responsive">
+                          <table class="table table-hover">
+                              <thead class="text-warning">
+                                  <th>ID</th>
+                                <th>Name</th>
+                                <th>Salary</th>
+                                <th>Country</th>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Dakota Rice</td>
+                                    <td>$36,738</td>
+                                    <td>Niger</td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Minerva Hooper</td>
+                                    <td>$23,789</td>
+                                    <td>Curaçao</td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Sage Rodriguez</td>
+                                    <td>$56,142</td>
+                                    <td>Netherlands</td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Philip Chaney</td>
+                                    <td>$38,735</td>
+                                    <td>Korea, South</td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-8 col-sm-offset-2">
+      <!--      Wizard container        -->
+      <div class="wizard-container">
+          <div class="card wizard-card" data-color="rose" id="wizardProfile">
+              <form action="" method="" novalidate="novalidate">
+                  <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+                  <div class="wizard-header">
+                      <h3 class="wizard-title">
+                          Build Your Profile
+                      </h3>
+                      <h5>This information will let us know more about you.</h5>
+                  </div>
+                  <div class="wizard-navigation">
+                      <ul class="nav nav-pills">
+                          <li style="width: 33.3333%;" class="active">
+                              <a href="#about" data-toggle="tab" aria-expanded="true">About</a>
+                          </li>
+                          <li style="width: 33.3333%;" class="">
+                              <a href="#account" data-toggle="tab" aria-expanded="false">Account</a>
+                          </li>
+                          <li style="width: 33.3333%;" class="">
+                              <a href="#address" data-toggle="tab" aria-expanded="false">Address</a>
+                          </li>
+                      </ul>
+                  <div class="moving-tab" style="width: 203.328px; transform: translate3d(-8px, 0px, 0px); transition: transform 0s;">About</div></div>
+                  <div class="tab-content">
+                      <div class="tab-pane active" id="about">
+                          <div class="row">
+                              <h4 class="info-text"> Let's start with the basic information (with validation)</h4>
+                              <div class="col-sm-4 col-sm-offset-1">
+                                  <div class="picture-container">
+                                      <div class="picture">
+                                          <img src="../../assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title="">
+                                          <input type="file" id="wizard-picture">
+                                      </div>
+                                      <h6>Choose Picture</h6>
+                                  </div>
+                              </div>
+                              <div class="col-sm-6">
+                                  <div class="input-group">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">face</i>
+                                      </span>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">First Name
+                                              <small>(required)</small>
+                                          </label>
+                                          <input name="firstname" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+                                      <span class="material-input"></span></div>
+                                  </div>
+                                  <div class="input-group">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">record_voice_over</i>
+                                      </span>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Last Name
+                                              <small>(required)</small>
+                                          </label>
+                                          <input name="lastname" type="text" class="form-control valid" aria-required="true" aria-invalid="false">
+                                      <span class="material-input"></span></div>
+                                  </div>
+                              </div>
+                              <div class="col-lg-10 col-lg-offset-1">
+                                  <div class="input-group">
+                                      <span class="input-group-addon">
+                                          <i class="material-icons">email</i>
+                                      </span>
+                                      <div class="form-group label-floating">
+                                          <label class="control-label">Email
+                                              <small>(required)</small>
+                                          </label>
+                                          <input name="email" type="email" class="form-control valid" aria-required="true" aria-invalid="false">
+                                      <span class="material-input"></span></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane" id="account">
+                          <h4 class="info-text"> What are you doing? (checkboxes) </h4>
+                          <div class="row">
+                              <div class="col-lg-10 col-lg-offset-1">
+                                  <div class="col-sm-4">
+                                      <div class="choice active" data-toggle="wizard-checkbox">
+                                          <input type="checkbox" name="jobb" value="Design" checked="checked">
+                                          <div class="icon">
+                                              <i class="fa fa-pencil"></i>
+                                          </div>
+                                          <h6>Design</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="choice active" data-toggle="wizard-checkbox">
+                                          <input type="checkbox" name="jobb" value="Code" checked="checked">
+                                          <div class="icon">
+                                              <i class="fa fa-terminal"></i>
+                                          </div>
+                                          <h6>Code</h6>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                      <div class="choice" data-toggle="wizard-checkbox">
+                                          <input type="checkbox" name="jobb" value="Develop">
+                                          <div class="icon">
+                                              <i class="fa fa-laptop"></i>
+                                          </div>
+                                          <h6>Develop</h6>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="tab-pane" id="address">
+                          <div class="row">
+                              <div class="col-sm-12">
+                                  <h4 class="info-text"> Are you living in a nice area? </h4>
+                              </div>
+                              <div class="col-sm-7 col-sm-offset-1">
+                                  <div class="form-group label-floating">
+                                      <label class="control-label">Street Name</label>
+                                      <input type="text" class="form-control valid" aria-invalid="false">
+                                  <span class="material-input"></span></div>
+                              </div>
+                              <div class="col-sm-3">
+                                  <div class="form-group label-floating">
+                                      <label class="control-label">Street No.</label>
+                                      <input type="text" class="form-control valid" aria-invalid="false">
+                                  <span class="material-input"></span></div>
+                              </div>
+                              <div class="col-sm-5 col-sm-offset-1">
+                                  <div class="form-group label-floating">
+                                      <label class="control-label">City</label>
+                                      <input type="text" class="form-control valid" aria-invalid="false">
+                                  <span class="material-input"></span></div>
+                              </div>
+                              <div class="col-sm-5">
+                                  <div class="form-group label-floating is-empty">
+                                      <label class="control-label">Country</label>
+                                      <select name="country" class="form-control">
+                                          <option disabled="" selected=""></option>
+                                          <option value="Afghanistan"> Afghanistan </option>
+                                          <option value="Albania"> Albania </option>
+                                          <option value="Algeria"> Algeria </option>
+                                          <option value="American Samoa"> American Samoa </option>
+                                          <option value="Andorra"> Andorra </option>
+                                          <option value="Angola"> Angola </option>
+                                          <option value="Anguilla"> Anguilla </option>
+                                          <option value="Antarctica"> Antarctica </option>
+                                          <option value="...">...</option>
+                                      </select>
+                                  <span class="material-input"></span></div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="wizard-footer">
+                      <!--<div class="pull-right">
+                          <input type="button" class="btn btn-next btn-fill btn-rose btn-wd" name="next" value="Next" style=""></input>
+                          <input type="button" class="btn btn-finish btn-fill btn-rose btn-wd" name="finish" value="Finish" style="display: none;">
+                      </div>
+                      <div class="pull-left">
+                          <input type="button" class="btn btn-previous btn-fill btn-default btn-wd disabled" name="previous" value="Previous">
+                      </div>
+                      <div class="clearfix"></div>-->
+                  </div>
+              </form>
+          </div>
+      </div>
+      <!-- wizard container -->
+  </div>
+  </div>
+</div>

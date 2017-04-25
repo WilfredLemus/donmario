@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <app-sidebar *ngIf="(af.auth | async)"></app-sidebar>
+  <div [ngClass]="{'main-panel': (af.auth | async)}">
+    <app-navbar *ngIf="(af.auth | async)"></app-navbar>
+    <div class="content">
+      <router-outlet ></router-outlet>
+    </div>
+    <footer class="footer">
+      <div class="container-fluid">
+        <p class="copyright pull-right">
+          &copy; 2017 <a href="http://www.wilfredlemus.me" target="_blank">Wilfred Lemus</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+<!--<div *ngSwitchCase="false">
+  <router-outlet></router-outlet>
+</div>-->
